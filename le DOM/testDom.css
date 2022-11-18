@@ -1,0 +1,38 @@
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.accordion::before {
+    content: "⏴";
+  }
+  
+.accordion {
+    background-color: #eee;
+    color: #eee;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.d1{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    color: #eee;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#orange{
+    background-color: orange;
+}

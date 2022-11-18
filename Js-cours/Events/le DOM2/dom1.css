@@ -1,0 +1,26 @@
+.error {
+    border: 1px solid #d6e9c6;
+    color: red;
+    background: floralwhite;
+    padding: 18px 32px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.succes {
+    border: 1px solid #d6e9c6;
+    color: green;
+    background: floralwhite;
+    padding: 18px 32px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.attention {
+    border: 1px solid #d6e9c6;
+    color: orange;
+    background: floralwhite;
+    padding: 18px 32px;
+    display: inline-block;
+    font-size: 20px;
+}

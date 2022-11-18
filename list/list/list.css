@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+
+  background-color: green;
+}
+
+.list {
+  
+}
+
+.selected-lang {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.selected-lang::before {
+  content: "⏴";
+}
+
+.langs-list {
+  display: none;
+  padding: 0;
+  list-style: none;
+}
+
+.langs-list.opened {
+  display: block;
+}

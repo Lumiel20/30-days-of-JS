@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 350px;
+    /*outline-color: lightsalmon;*/
+}
+
+input, label {
+    margin: 10px;
+}
+label, input, button {
+    display: inline-block;
+}
+
+input:valid {
+    /*color: lime;*/
+    outline-color: lime;
+}
+input:invalid {
+    /*color: red;*/
+    outline-color: red;
+}

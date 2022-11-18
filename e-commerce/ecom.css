@@ -1,0 +1,113 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.logo img
+{
+  width: 145px;  
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around,
+    
+}
+.col-2{
+    flex-basis: 50%; 
+}
+.col-2 img{
+    width: 100%;
+    padding: 10px 0;
+}
+.col-2 h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin: 20px 0;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: rgb(0, 109, 128);
+    color: #fefefef6;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.col-2 a:hover{
+    background-color: #107766;
+}
+p{
+    color: #555;
+}
+.headsection{
+    margin-top: -20px;
+    background: radial-gradient(#fff, #eaf2fb);
+} 
+
+/* style de le section category */
+
+.category{
+    margin: 70px;
+}
+.col-3{
+flex-basis: 30%;
+min-width: 250px;
+margin: auto;
+}
+
+.col-3 img{
+    width: 100%;
+}
+.container h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #444;
+    margin: 40px 0;
+}
+/* section des meilleurs prix */
+
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0.35s;
+}
+.col-4 img{
+    width: 100%;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}

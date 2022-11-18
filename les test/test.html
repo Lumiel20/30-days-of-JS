@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    position: relative;
+    /*animation-duration: 3s;*/
+    height: 400px;
+    width: 400px;
+    border: none;
+    background-color: lightgrey;
+    /*display: flex;*/
+
+    
+}
+.circle {
+    position: absolute;
+    width: 20px;
+    padding: 20px;
+    height: 20px;
+    background-color: #00897B;
+    border-radius: 100%;
+    margin-left: 150px;
+}
+
+.anim {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.anim1 {
+    margin-left: 150px;
+    animation-name: animation-1;
+    
+}
+@keyframes
+animation-1 {
+    0% {    
+        background-color: #f00;
+    }
+    100% {
+        margin-top: 340px;
+    }
+}
+
+.anim2 {
+    margin-left: 50px;
+    animation-name: animation-2;
+    
+}
+@keyframes
+animation-2 {
+    0% {    
+        background-color: orange;
+    }
+    100% {
+        margin-top: 340px;
+        margin-left: 300px;
+        background-color: gold;
+    }
+}
+
+.anim3 {
+    margin-left: 100px;
+    animation-name: animation-3;
+   
+}
+@keyframes
+animation-3 {
+    0% { 
+        background-color: aqua;
+    }
+    33% {
+        margin-top: 0px;
+        margin-left: 300px;
+    }
+    66% {
+        margin-top: 300px;
+        margin-left: 0px;
+    }
+    100% {
+        margin-top: 300px;
+        margin-left: 300px;
+        background-color: darksalmon;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle anim anim1"></div>
+        <div class="circle anim anim2"></div>
+        <div class="circle anim anim3"></div>
+    </div>
+</body>
+</html>

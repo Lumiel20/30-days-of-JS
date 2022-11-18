@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="formulaire.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Validating Web Forms</h1>
+    
+    <div>
+        <form name="formulaire" method="post" action="inscription_trait.htm" onsubmit="return envoi()">
+                <div 
+                class="firstName"><label>First Name</label> <br>
+                <input type="text"name="pseudo" id="firstName" required pattern="[A-z0-9._-]+"/>
+               </div>
+
+                <div class="firstName"><label>Last Name</label> <br>
+                <input type="text"name="LastName" id="LastName" required pattern="[A-z0-9._-]+"/>
+                 </div>
+
+                <div class="email"><label>Email</label> <br>
+                    <input type="email" name="mail1"  id="mail1" required />
+                    <!--pattern="[A-z0-9._-]+[@]{1}[A-z0-9._-]+[.]{1}[A-z]{2, 10}"-->
+                </div>
+
+                <div class="email"><label>Confirmer votre Email</label> <br>
+                    <input type="email" name="mail2"  id="mail2" required />
+                </div>
+
+                <div class="tel"><label>Telephone</label> <br>
+                <input type="tel" id="phone" required pattern="[0-9]{5}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"/>
+                </div>
+
+                <div class="password"><label>Password</label> <br>
+                 <input type="new-password" name="password1" id="password1" required pattern="[A-z0-9]{6,8}" />
+                </div>
+
+                <div class="password"><label>Confirmer votre Password</label> <br>
+                    <input type="current-password" name="password2" id="password2" required pattern="[A-z0-9]{6,8}"  alt="password"/>
+                   </div>
+
+                <div class="bio"><label>Your bio</label> <br>
+                <input type="text"name="bio"  required pattern="[A-z]{2,10}"/>
+               </div>
+               
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+        </form>
+    </div>
+    <script src="formulaire.js"></script>
+</body>
+</html>

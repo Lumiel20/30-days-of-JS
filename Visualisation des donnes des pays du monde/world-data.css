@@ -1,0 +1,58 @@
+.banniere{
+    background-image: url('monde1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+p{
+color: orange;
+}
+
+.button-section{
+padding: 30px;
+}
+
+button{
+font-size: 0.6em;
+height: 18px;
+}
+
+input{
+    width: 370px;
+    height: 35px;
+}
+
+h1{ 
+    color: white;
+}
+
+.total-country {
+    
+    color: white;
+}
+
+div#pays {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 50px;
+    background-color: khaki;
+}
+
+
+.liste {
+    color: white;
+    height: 180px;
+    width: 180px;
+    font-size: 1.5em;
+    background-image: url('monde1.jpg');
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

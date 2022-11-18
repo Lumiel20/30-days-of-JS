@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    
+    
+}
+ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+    background-color: orange;
+}
+
+.row {
+    margin: 2px 12px;
+    /* padding: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: baseline;
+}
+
+.col2 {
+    /*border: solid black 0.5px;*/
+    padding: 8px;
+    background-color: orange; 
+    height: 15px;
+}
+
+span.col3{
+    text-align: right;
+}
